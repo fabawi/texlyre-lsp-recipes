@@ -1,0 +1,22 @@
+[
+  {
+    "id": "harper-ls",
+    "name": "Harper LS",
+    "enabled": true,
+    "fileExtensions": ["tex", "latex", "typ", "bib", "md", "txt"],
+    "languageIdMap": {
+      "tex": "markdown",
+      "latex": "markdown",
+      "typ": "markdown",
+      "bib": "markdown",
+      "md": "markdown",
+      "txt": "markdown"
+    },
+    "transportConfig": {
+      "type": "websocket",
+      "url": "ws://localhost:7000",
+      "contentLength": false
+    },
+    "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
+  }
+]
