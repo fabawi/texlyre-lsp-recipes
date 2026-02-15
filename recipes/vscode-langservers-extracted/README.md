@@ -45,25 +45,25 @@ Each language server should be launched behind its own `lsp-ws-proxy` instance (
 ### JSON / JSONC
 
 ```bash
-lsp-ws-proxy -l 127.0.0.1:7000 -- vscode-json-language-server --stdio
+lsp-ws-proxy -l 127.0.0.1:7010 -- vscode-json-language-server --stdio
 ```
 
 ### HTML
 
 ```bash
-lsp-ws-proxy -l 127.0.0.1:7001 -- vscode-html-language-server --stdio
+lsp-ws-proxy -l 127.0.0.1:7011 -- vscode-html-language-server --stdio
 ```
 
 ### CSS / SCSS / LESS
 
 ```bash
-lsp-ws-proxy -l 127.0.0.1:7002 -- vscode-css-language-server --stdio
+lsp-ws-proxy -l 127.0.0.1:7012 -- vscode-css-language-server --stdio
 ```
 
 ### Markdown
 
 ```bash
-lsp-ws-proxy -l 127.0.0.1:7003 -- vscode-markdown-language-server --stdio
+lsp-ws-proxy -l 127.0.0.1:7013 -- vscode-markdown-language-server --stdio
 ```
 
 * Each proxy listens on `ws://localhost:<port>`
@@ -93,7 +93,7 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
     },
     "transportConfig": {
       "type": "websocket",
-      "url": "ws://localhost:7000",
+      "url": "ws://localhost:7010",
       "contentLength": false
     },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
@@ -116,7 +116,7 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
     },
     "transportConfig": {
       "type": "websocket",
-      "url": "ws://localhost:7001",
+      "url": "ws://localhost:7011",
       "contentLength": false
     },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
@@ -140,7 +140,7 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
     },
     "transportConfig": {
       "type": "websocket",
-      "url": "ws://localhost:7002",
+      "url": "ws://localhost:7012",
       "contentLength": false
     },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
@@ -163,7 +163,7 @@ Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Co
     },
     "transportConfig": {
       "type": "websocket",
-      "url": "ws://localhost:7003",
+      "url": "ws://localhost:7013",
       "contentLength": false
     },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
@@ -183,7 +183,7 @@ If you want JSON + HTML + CSS + Markdown at the same time, combine them like thi
     "enabled": true,
     "fileExtensions": ["json", "jsonc"],
     "languageIdMap": { "json": "json", "jsonc": "jsonc" },
-    "transportConfig": { "type": "websocket", "url": "ws://localhost:7000", "contentLength": false },
+    "transportConfig": { "type": "websocket", "url": "ws://localhost:7010", "contentLength": false },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
   },
   {
@@ -192,7 +192,7 @@ If you want JSON + HTML + CSS + Markdown at the same time, combine them like thi
     "enabled": true,
     "fileExtensions": ["html", "htm"],
     "languageIdMap": { "html": "html", "htm": "html" },
-    "transportConfig": { "type": "websocket", "url": "ws://localhost:7001", "contentLength": false },
+    "transportConfig": { "type": "websocket", "url": "ws://localhost:7011", "contentLength": false },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
   },
   {
@@ -201,7 +201,7 @@ If you want JSON + HTML + CSS + Markdown at the same time, combine them like thi
     "enabled": true,
     "fileExtensions": ["css", "scss", "less"],
     "languageIdMap": { "css": "css", "scss": "scss", "less": "less" },
-    "transportConfig": { "type": "websocket", "url": "ws://localhost:7002", "contentLength": false },
+    "transportConfig": { "type": "websocket", "url": "ws://localhost:7012", "contentLength": false },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
   },
   {
@@ -210,7 +210,7 @@ If you want JSON + HTML + CSS + Markdown at the same time, combine them like thi
     "enabled": true,
     "fileExtensions": ["md", "markdown"],
     "languageIdMap": { "md": "markdown", "markdown": "markdown" },
-    "transportConfig": { "type": "websocket", "url": "ws://localhost:7003", "contentLength": false },
+    "transportConfig": { "type": "websocket", "url": "ws://localhost:7013", "contentLength": false },
     "clientConfig": "{\"rootUri\":\"file:///\",\"workspaceFolders\":[]}"
   }
 ]
