@@ -47,6 +47,9 @@ lsp-ws-proxy -l 127.0.0.1:7000 -- harper-ls --stdio
 
 ## 4. TeXlyre configuration
 
+ You can use **more than one LSP at the same time**. To do this, simply **add another config block below this one in the same list**. 
+ Keep everything inside the square brackets `[` `]` and separate each  `{` `}` block with a comma.
+ 
 Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Configurations.
 
 This configuration maps all supported file types to the markdown language ID so
@@ -76,8 +79,6 @@ Harper LS treats them consistently as prose.
   }
 ]
 ```
-
-**NOTE:** You can use **more than one LSP at the same time**. To do this, simply **add another config block below this one in the same list**. Keep everything inside the square brackets `[` `]` and separate each  `{` `}` block with a comma.
 
 ---
 
