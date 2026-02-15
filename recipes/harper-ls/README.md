@@ -86,5 +86,5 @@ Harper LS treats them consistently as prose.
 
 * If you change the proxy port, update `transportConfig.url` accordingly.
 * Harper LS provides diagnostics and code actions such as ignoring rules or
-  adding words to a dictionary (currently, adding new words to the dictionary is **NOT supported** in TeXlyre).
+  adding words to a dictionary (currently, adding new words to the dictionary is functional but **NOT stable** in TeXlyre).
 
