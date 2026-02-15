@@ -77,6 +77,8 @@ Harper LS treats them consistently as prose.
 ]
 ```
 
+**NOTE:** You can use **more than one LSP at the same time**. To do this, simply **add another config block below this one in the same list**. Keep everything inside the square brackets `[` `]` and separate each  `{` `}` block with a comma.
+
 ---
 
 ## Notes
