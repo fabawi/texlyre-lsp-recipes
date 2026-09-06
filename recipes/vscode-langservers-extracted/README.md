@@ -76,7 +76,7 @@ lsp-ws-proxy -l 127.0.0.1:7013 -- vscode-markdown-language-server --stdio
 You can use **more than one LSP at the same time**. To do this, simply **add another config block below** in the **same list**.
 Keep everything inside the square brackets `[` `]` and separate each `{` `}` block with a comma.
 
-Paste the following JSON into Settings ⚙️ → LSP → Generic LSP → LSP Configurations.
+Paste the following JSON into <SettingsPath path="External Tools > Generic LSP > LSP Recipes" />.
 
 ### JSON / JSONC configuration
 

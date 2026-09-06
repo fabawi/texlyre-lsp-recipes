@@ -1,7 +1,7 @@
 # TeXlyre LSP Recipes
 
-This repository contains **Language Server Protocol (LSP) recipes** for use with TeXlyre’s
-**Settings → LSP → Generic LSP** feature.
+This repository contains **Language Server Protocol (LSP) recipes** for use with the
+<SettingsPath path="External Tools > Generic LSP > LSP Recipes" /> setting in TeXlyre.
 
 Each recipe in the `recipes` directory provides:
 
